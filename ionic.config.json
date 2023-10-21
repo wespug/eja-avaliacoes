@@ -1,0 +1,7 @@
+{
+  "name": "eja-avaliacoes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

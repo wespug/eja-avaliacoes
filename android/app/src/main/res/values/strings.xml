@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">eja-avaliacoes</string>
+    <string name="title_activity_main">eja-avaliacoes</string>
+    <string name="package_name">eja.avaliacoes</string>
+    <string name="custom_url_scheme">eja.avaliacoes</string>
+</resources>
