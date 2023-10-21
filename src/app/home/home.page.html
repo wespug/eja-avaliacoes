@@ -14,7 +14,40 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button (click)="createUser()">Adcionar Usuario</ion-button>
+    <ion-button (click)="log()">log</ion-button>
+    <ion-item *ngFor="let user of users()">
+      <ion-checkbox 
+        aria-label="Label"
+        slot="start"
+        [(ngModel)]="user.active"
+        (ionChange)="updateUser(user)"
+      ></ion-checkbox>
+      <ion-label>{{user.name}}</ion-label>
+      <ion-button  slot="end" (click)="deleteUser(user)"  color="danger">
+        <ion-icon slot="start" name="star"></ion-icon>
+      </ion-button> 
+      
+    </ion-item>
+  <!--   <ion-item *ngFor ="let user of users()">
+      
+    </ion-item> -->
+   <!--  
+
+   
+      
+     
+     
+      
+    </ion-item> -->
+    
+    <strong>Ready to crdddddeate an app!!?</strong>
+    <p>Start with ssIonic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  
+    <ion-icon name="logo-ionic"></ion-icon>
+    <ion-icon name="logo-ionic" size="large"></ion-icon>
+    <ion-icon name="logo-ionic" color="primary"></ion-icon>
+    <ion-icon name="logo-ionic" size="large" color="primary"></ion-icon>
+
   </div>
 </ion-content>
